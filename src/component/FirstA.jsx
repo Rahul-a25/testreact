@@ -12,13 +12,15 @@ const FirstA = () => {
           console.log(Data);
       }
   return (
-    <div>
+    <>
          <Firstname.Provider value={Data}>
-         <button onClick={Submit}>Click</button>
-
+        
+         <h1>Hello Kabir Sir You can Click on this Button</h1>
+         <button style={{padding:"10px ",width:"100px"}} onClick={Submit}>Click</button>
+         <FirstD/>
          </Firstname.Provider> 
 
-    </div>
+    </>
   )
 }
 

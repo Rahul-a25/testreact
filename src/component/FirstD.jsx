@@ -3,12 +3,20 @@ import { Firstname } from './FirstA';
 
 const FirstD = () => {
     const result=useContext(Firstname);
-
+    if(!result){
+        return null
+    }
+  console.log(result);
   return (
     <>
       <div>
        <ul>
-        <li>{result.name}</li>
+        {
+            result.map((res)=><li>{res.name}</li>)
+            
+        }
+        
+        
        </ul>
      </div> 
     </>
