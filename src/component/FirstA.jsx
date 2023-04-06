@@ -1,5 +1,5 @@
-import React, { useEffect, useState, createContext} from 'react'
-import FirstD from './FirstD';
+import React, { useState, createContext} from 'react'
+import FirstB from './FirstB';
 const Firstname=createContext();
 
 const FirstA = () => {
@@ -15,9 +15,9 @@ const FirstA = () => {
     <>
          <Firstname.Provider value={Data}>
         
-         <h1>Hello Kabir Sir You can Click on this Button</h1>
+         <h1>Hello  You can Click on this Button And it will show User Name From userAPI</h1>
          <button style={{padding:"10px ",width:"100px"}} onClick={Submit}>Click</button>
-         <FirstD/>
+         <FirstB/>
          </Firstname.Provider> 
 
     </>
